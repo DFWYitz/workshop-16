@@ -9,16 +9,18 @@ const groceryList = [
 ];
 
 //logNames
-groceryList.forEach((itemName)=>{
-  console.log (itemName.name);
+groceryList.forEach((itemName) => {
+  console.log(itemName.name);
 })
 
 //getUppercaseNames
-groceryList.map ((itemCaps)=>{
-return ((itemCaps.name.toUppercase))
+const caps = (list) => {
+  return list.map((itemCaps) => {
+    return itemCaps.name.toUpperCase()
 
-})
-
+  })
+}
+console.log (caps (groceryList))
 //getItemById
 //getItemPriceByName
 //getItemsByCategory
