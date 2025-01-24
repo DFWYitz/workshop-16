@@ -21,7 +21,15 @@ const caps = (list) => {
   })
 }
 console.log (caps (groceryList))
+
+
 //getItemById
+const getItemById = (number, items) => {
+return items.find ((grocery) => grocery.id === number); 
+}
+//console.log(getItemById(4,groceryList));
+  for (let index = 1; index<9; index +=1 ){console.log(getItemById(4,groceryList));}
+
 //getItemPriceByName
 //getItemsByCategory
 //countItems
